@@ -20,8 +20,14 @@
   },
   "homepage": "https://edwardtufte.github.io/tufte-css/",
   "files": [
-      "tufte.css",
-      "tufte.min.css",
-      "et-book/"
-  ]
+    "tufte.css",
+    "tufte.min.css",
+    "et-book/"
+  ],
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0"
+  },
+  "scripts": {
+    "build": "cleancss -o tufte.min.css tufte.css"
+  }
 }
